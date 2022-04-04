@@ -5,11 +5,13 @@ import org.testng.annotations.BeforeSuite;
 import pages.BasePage;
 import pages.homepage.HomePage;
 import pages.register.Register;
+import pages.switchTo.Alert;
 
 public class BaseTest {
 
     public HomePage homePage = HomePage.getInstance();
     public Register register = Register.getInstance();
+    public Alert alert = Alert.getInstance();
 
     @BeforeSuite
     public void init(){
